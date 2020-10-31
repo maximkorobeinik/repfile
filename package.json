@@ -1,0 +1,44 @@
+{
+  "name": "reproduccio",
+  "version": "1.0.0",
+  "description": "third week",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximkorobeinik/repro.git"
+  },
+  "keywords": [
+    "reproduccio",
+    "site",
+    "third",
+    "week"
+  ],
+  "author": "Maxim Korobeinik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximkorobeinik/repro/issues"
+  },
+  "homepage": "https://github.com/maximkorobeinik/repro#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.13",
+    "cssnano": "^4.1.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "webpack-stream": "^6.1.0"
+  }
+}

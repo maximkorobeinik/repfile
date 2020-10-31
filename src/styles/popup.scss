@@ -1,0 +1,27 @@
+#popup{
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    width: 50vw;
+    height: 80vh;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 40px;
+    h6.popup_header{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    p{
+        width: 70%;
+        line-height: 20px;
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    p.popup_text{
+        padding-top: 15px;
+    }
+
+    p.popup_spec{
+        padding: 15px 16px;
+    }
+}

@@ -1,0 +1,132 @@
+footer{
+    grid-area: footer;
+    height: 565px;
+    background: #000;
+    width: 100%;
+    
+    .footer_container{
+        width: 65vw;
+        height: 545px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: "text form";
+        grid-template-columns: repeat(2, 1fr);
+        div.footer_text{
+            grid-area: text;
+            background: none;
+            padding-left: 40px;
+            display: grid;
+            .text_top{
+                h3.footer_text{
+                    font-size: 60px;
+                    font-weight: 700;
+                    line-height: 54px;
+                    color: var(--content-main-color);
+                    padding-top: 40px;
+                    margin-bottom: 10px;
+                }
+                p.footer_text{
+                    font-size: 20px;
+                    color: var(--content-main-color);
+                    font-weight: 400;
+                    padding-bottom: 4px;
+                }
+                a{
+                    color: var(--content-main-color);
+                    &:hover{
+                        color: #9d9d9d;
+                    }
+                }
+            }
+            .text_bottom{
+                align-self: flex-end;
+                margin-bottom: 80px;
+                p.text_btm{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #666666;
+                    margin-bottom: 23px;
+                }
+                a.popup_link{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #666666;
+                    &:hover{
+                        color: #c3c3c3;
+                    }
+                }
+                
+            }
+            
+        }
+        .footer_form{
+            grid-area: form;
+            background: none;
+            width: 500px;
+            height: 424px;
+            margin-top: 40px;
+            .after_form{
+                display: none;
+                h6{
+                    color: #02ae00;
+                    font-size: 40px;
+                    font-weight: 600;
+                    transform: rotate(-8deg);
+                }
+                p{
+                    color: #02ae00;
+                    font-size: 20px;
+                    padding: 60px 0 0 20px;
+                }
+            }
+            .form_container{
+                form{
+                    height: 424px;
+                    position: relative;
+                    font-family: 'Roboto', sans-serif;
+                    input[type="text"]{
+                        width: 486px;
+                        height: 38px;
+                        border: 2px solid #ffffff;
+                        border-radius: var(--form-borders-rad);
+                        padding: 5px;
+                        font-size: 20px;
+                        outline: none;
+                        transition: .2s;
+                    }
+                    textarea[name="message"]{
+                        font-family: 'Roboto', sans-serif;
+                        width: 490px;
+                        height: 269px;
+                        resize: none;
+                        margin-top: 15px;
+                        border: none;
+                        border-radius: var(--form-borders-rad);
+                        padding: 5px;
+                        font-size: 20px;
+                        outline: none;
+                    }
+                    input[type="button"]{
+                        font-family: 'Roboto', sans-serif;
+                        width: 300px;
+                        height: 55px;
+                        right: 0;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        background: #2400fe;
+                        font-size: 22px;
+                        color: #ffffff;
+                        border: none;
+                        border-radius: 7px;
+                        outline: none;
+                        transition: .2s;
+                    }
+                    input[type="button"]:disabled{
+                        background: rgba(17, 0, 112, 0.596);
+                    }
+                }
+            }
+        }
+    }
+}

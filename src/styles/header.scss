@@ -1,0 +1,181 @@
+@import 'css_reset.scss';
+@include css_reset()
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'slick';
+@import 'slides';
+
+:root{
+    --header-main-color-dark: #000000;
+    --header-main-color-light: #656565;
+    --pic-name-color: #ffffff;
+    --pic-name-fontsize: 20px;
+    --pic-fontweight: 300;
+    --pic-description-color: #c4c4c4;
+    --pic-description-fontsize: 16px;
+    --price-color: #ffb700;
+    --content-main-color: #ffffff;
+    --slider-margin: 0 100px;
+    --slider-padding-top: 90px;
+    --slider-box-shadow: 0 20px 50px 5px;
+    --form-borders-rad: 5px;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 'header'
+    'section'
+    'footer';
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    grid-area: header;
+    height: auto;
+    background: #ffffff;
+    display: grid;
+    grid-template-areas: 'text pic';
+    grid-template-columns: 320px 73vw;
+    padding: 40px 0 40px 40px;
+    width: 95vw;
+    overflow: hidden;
+    .text_section{
+        grid-area: text;
+        background: none;
+        h1{
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 54px;
+            color: var(--header-main-color-dark);
+        }
+        p.header_desc{
+            margin-top: 23px;
+            font-size: 20px;
+            color: var(--header-main-color-dark);
+        }
+
+        p.header_addr{
+            margin-top: 60px;
+            color: var(--header-main-color-light);
+            margin-bottom: 20px;
+        }
+
+        a.header_tel{
+            color: var(--header-main-color-light);
+            text-decoration: none;
+            margin-bottom: 5px;
+            &:hover{
+                color: #000;
+            }
+        }
+
+        a.header_contact{
+            color: var(--header-main-color-light);
+            text-decoration: none;
+            margin-bottom: 5px;
+            &:hover{
+                color: #000;
+            }
+        }
+
+
+    }
+    .pic_section{
+        grid-area: pic;
+        background: #ffffff;
+        display: grid;
+        grid-template-areas: 'slider_main slider_small';
+        grid-template-columns: 75% 25%;
+        min-width: 0;
+        .slider_main{
+            grid-area: slider_main;
+            display: flex;
+            height: auto;
+            overflow: hidden;
+            min-width: 0;
+            width: 100%;
+            background: #121212;
+            .main_slide{
+                position: relative;
+                width: 65%;
+                height: 700px;
+                overflow: hidden;
+                &>img{
+                    min-width: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                span{
+                    width: 625px;
+                    height: 70px;
+                    background: #000000ad;
+                    position: absolute;
+                    z-index: 1000;
+                    bottom: 0;
+                    left: 0;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    p.pic_name{
+                        color: var(--pic-name-color);
+                        font-size: var(--pic-name-fontsize);
+                        padding: 10px 0 0 15px;
+                        font-weight: var(--pic-fontweight);
+                    }
+                    p.author_name{
+                        color: var(--pic-description-color);
+                        font-size: var(--pic-description-fontsize);
+                        font-weight: var(--pic-fontweight);
+                        padding: 5px 0 0 15px;
+                    }
+                    p.pic_size{
+                        color: var(--pic-description-color);
+                        font-size: var(--pic-description-fontsize);
+                        font-weight: var(--pic-fontweight);
+                        padding: 10px 0 0 0;
+                    }
+
+                    p.pic_price{
+                        color: var(--price-color);
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                }
+            }
+            
+        }
+        .slider_small{
+            grid-area: slider_small;
+            display: flex;
+            height: 700px;
+            min-width: 0;
+            margin-left: 30px;
+            padding-top: 50px;
+            width: 13vw;
+            height: 100%;
+            justify-self: center;
+            .small_main_slide{
+                display: flex;
+                width: auto;
+                height: 180px;
+                min-width: 0;
+                padding: 10px 0;
+                border: none;
+                overflow: hidden;
+                
+                img{
+                    width: 13vw;
+                    height: 180px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+

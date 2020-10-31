@@ -1,0 +1,39 @@
+include header.pug
+section
+    h3.desc Популярное
+    p.desc Нестареющая классика и бестселлеры.
+    .main_slider
+        .main_slide_1
+            img(class ="img_1" src="assets/img/girl_with_a_pearl_earring.webp", alt="girl_with_a_pearl_earring")
+            h6.pic_name Девушка с жемчужной серёжкой, 1665
+            p.author_name Ян Вермеер
+            p.pic_size 44 × 39 см, холст <span class="pic_price">900 &#8381</span>
+        .main_slide_2
+            img(class ="img_2" src="assets/img/napoleon-at_saint_bernard.webp", alt="napoleon-at_saint_bernard")
+            h6.pic_name Бонапарт на перевале Сен-Бернар, 1801
+            p.author_name Жак Луи Давид
+            p.pic_size 261 × 220 см, холст <span class="pic_price">3900 &#8381</span>
+        .main_slide_3
+            img(class ="img_3" src="assets/img/the_hunters_in_the_snow.webp", alt="the_hunters_in_the_snow.jpg")
+            h6.pic_name Охотники на снегу, 1565
+            p.author_name Питер Брейгель Старший
+            p.pic_size 117 × 162 см, доска <span class="pic_price">2400 &#8381</span>
+        .main_slide_4
+            img(class ="img_2" src="assets/img/sunflowers.webp", alt="sunflowers")
+            h6.pic_name Подсолнухи, 1888
+            p.author_name Винсент ван Гог
+            p.pic_size 92 × 73 см, холст <span class="pic_price">10000 &#8381</span>
+        .main_slide_5
+            img(class ="img_1" src="assets/img/starry_night.webp", alt="starry_night")
+            h6.pic_name Звёздная ночь, 1889
+            p.author_name Винсент ван Гог
+            p.pic_size 73,7 × 92,1 см, холст <span class="pic_price">over9000 &#8381</span>
+
+include footer.pug
+
+script(src ="scripts/jquery-3.5.1.js")
+script(src ="scripts/slick.min.js")
+script(src ="scripts/jquery.magnific-popup.min.js")
+script(src ="scripts/sliders.js")
+script(src ="scripts/mailValid.js")
+    
